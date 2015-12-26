@@ -11,7 +11,13 @@
     &.@{state} > td,
     &.@{state} > th {
       background-color: @background;
+      color: #fff;
+
+      > a {
+        color: #fff;
+      }
     }
+    
   }
 
   // Hover states for `.table-hover`
@@ -23,6 +29,10 @@
     &:hover > .@{state},
     &.@{state}:hover > th {
       background-color: darken(@background, 5%);
+      color: #fff;
+      > a {
+        color: #fff;
+      }
     }
   }
 }
